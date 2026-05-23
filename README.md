@@ -11,7 +11,7 @@
 
 ## 🌐 Live URL
 
-> **https://devpulse-9wqg6.onrender.com** — Deployed on Render (free tier)
+> **https://devpulse-9wq6.onrender.com** — Deployed on Render (free tier)
 
 ---
 
