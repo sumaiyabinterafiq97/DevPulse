@@ -11,7 +11,7 @@
 
 ## 🌐 Live URL
 
-> **https://devpulse-api.onrender.com** *(update after deployment)*
+> **https://devpulse-9wqg6.onrender.com** — Deployed on Render (free tier)
 
 ---
 
@@ -198,21 +198,21 @@ Server runs at: `http://localhost:5000`
 
 ### Register a user
 ```bash
-curl -X POST http://localhost:5000/api/auth/signup \
+curl -X POST https://devpulse-9wqg6.onrender.com/api/auth/signup \
   -H "Content-Type: application/json" \
   -d '{"name":"John Doe","email":"john@devpulse.com","password":"pass123","role":"contributor"}'
 ```
 
 ### Login
 ```bash
-curl -X POST http://localhost:5000/api/auth/login \
+curl -X POST https://devpulse-9wqg6.onrender.com/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"john@devpulse.com","password":"pass123"}'
 ```
 
 ### Create an issue
 ```bash
-curl -X POST http://localhost:5000/api/issues \
+curl -X POST https://devpulse-9wqg6.onrender.com/api/issues \
   -H "Content-Type: application/json" \
   -H "Authorization: <your_token>" \
   -d '{"title":"DB timeout under load","description":"Pool exhausts after 50+ concurrent queries","type":"bug"}'
@@ -220,7 +220,7 @@ curl -X POST http://localhost:5000/api/issues \
 
 ### Get all issues (filtered)
 ```bash
-curl "http://localhost:5000/api/issues?sort=newest&type=bug&status=open"
+curl "https://devpulse-9wqg6.onrender.com/api/issues?sort=newest&type=bug&status=open"
 ```
 
 ---
